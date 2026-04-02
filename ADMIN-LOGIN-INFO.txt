@@ -1,0 +1,75 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                        THÔNG TIN ĐĂNG NHẬP ADMIN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔐 TẠO TÀI KHOẢN ADMIN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CÁCH 1: Chạy script tự động (Khuyến nghị)
+─────────────────────────────────────────────────────────────────────────────────
+
+Windows:
+    create-admin.bat
+
+Mac/Linux:
+    chmod +x create-admin.sh
+    ./create-admin.sh
+
+Hoặc:
+    cd backend
+    node src/utils/createAdmin.js
+
+
+CÁCH 2: Tạo từ tài khoản có sẵn
+─────────────────────────────────────────────────────────────────────────────────
+
+1. Đăng ký tài khoản tại: http://localhost:5173/register
+2. Mở MongoDB Compass hoặc mongosh
+3. Chạy lệnh:
+
+    db.users.updateOne(
+      { email: "email-cua-ban@example.com" },
+      { $set: { role: "admin" } }
+    )
+
+4. Đăng xuất và đăng nhập lại
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 THÔNG TIN ĐĂNG NHẬP MẶC ĐỊNH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📧 Email:    admin@elearning.com
+🔑 Password: admin123456
+👤 Role:     admin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 TRUY CẬP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Trang đăng nhập:
+    http://localhost:5173/login
+
+Admin Dashboard:
+    http://localhost:5173/admin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  BẢO MẬT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ ĐỔI MẬT KHẨU NGAY SAU KHI ĐĂNG NHẬP LẦN ĐẦU!
+✅ Không chia sẻ thông tin đăng nhập
+✅ Sử dụng mật khẩu mạnh trong production
+✅ Xóa tài khoản admin mặc định khi deploy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 TÀI LIỆU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hướng dẫn chi tiết:     TAO-TAI-KHOAN-ADMIN.md
+Hướng dẫn sử dụng:      ADMIN-GUIDE.md
+Tính năng hoàn thành:   ADMIN-DASHBOARD-COMPLETED.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Chúc bạn thành công! 🎉
